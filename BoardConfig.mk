@@ -4,7 +4,7 @@
  ### such a document.            --ultraviolet ###
  #################################################
 
-$(call inherit-product, device/zte/smarttab-common/BoardConfigCommon.mk)
+-include device/zte/smarttab-common/BoardConfigCommon.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := V71A
 TARGET_KERNEL_CONFIG := v71_defconfig 
