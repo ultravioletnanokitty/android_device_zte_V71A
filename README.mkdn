@@ -1,0 +1,21 @@
+Device Configuration for ZTE SmartTab 7 (V71A)
+===============
+
+Building
+---------------
+
+Initialise the CM10 repo with the following:
+
+    repo init -u git://github.com/CyanogenMod/android.git -b jellybean
+
+Copy the device local manifest to the appropriate location:
+
+	mkdir .repo/local_manifests
+	wget https://raw.github.com/ultravioletnanokitty/android_device_zte_V71A-wifionly/4.1/V71A.xml -O .repo/local_manifests/V71A.xml
+	
+Sync and build as usual:
+
+	repo sync
+	. build/envsetup.sh
+	vendor/cm/get-prebuilts
+	brunch V71A
