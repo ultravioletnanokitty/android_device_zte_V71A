@@ -29,7 +29,7 @@ on init
 
 on fs
     # mount mmc partitions
-    mount_all /V71A.fstab
+    mount_all /V55.fstab
     
 on post-fs-data
     # We chown/chmod /persist again so because mount is run as root + defaults
